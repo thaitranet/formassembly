@@ -292,3 +292,18 @@ input[type="password"]#password:hover {
 .wFormContainer .wForm .actions .primaryAction {
     display: none;
 }
+
+#tfaContent {
+  position: relative;
+  min-height: 100vh;
+}
+
+.htmlSection .htmlContent img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Adjust height as needed */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  z-index: -1;
+}
