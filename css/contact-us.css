@@ -176,6 +176,10 @@ input[type=checkbox] {
 }
 
 /* Custom styling for form radio lists */
+.wFormContainer .wForm [role="radiogroup"] > label {
+    margin-bottom: 24px;
+}
+
 .wFormContainer .wForm input[type=checkbox],
 .wFormContainer .wForm input[type=radio] {
   margin-bottom: 0.75em;
