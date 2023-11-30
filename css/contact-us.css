@@ -1,0 +1,199 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800&display=swap");
+
+/* Colors */
+:root {
+  --primary-mid-blue-400: #2041ca;
+  --secondary-dark-blue: #23276c;
+  --neutral-100: #f5f5f5;
+  --neutral-500: #666666;
+  --neutral-600: #333333;
+  --red: #c30000;
+  --pink: #ed1a60;
+}
+
+/* Variables */
+:root {
+  --font-title-font: "Inter", sans-serif;
+  --border-radius: 12px;
+}
+
+/* General styles */
+.wFormWebPage {
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  scrollbar-color: transparent; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.wFormWebPage::-webkit-scrollbar {
+  width: 0;
+  display: none;
+  background: transparent;
+  height: 0;
+}
+
+/* Form container */
+.wFormContainer {
+  font-family: var(--font-title-font);
+}
+
+/* Input styles */
+.wFormContainer .wForm .inputWrapper {
+  width: 100%;
+}
+
+.wFormContainer .wForm .inputWrapper input[type="text"],
+.wFormContainer .wForm .inputWrapper input[type="password"],
+.wFormContainer .wForm .inputWrapper select,
+.wFormContainer .wForm .inputWrapper textarea {
+  color: var(--neutral-600);
+  border: 1px solid var(--neutral-500);
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 100%;
+  background-color: white;
+  border-radius: var(--border-radius);
+}
+
+/* Other input styles omitted for brevity */
+
+/* Error styles */
+.wFormContainer .wForm .inputWrapper .oneField.errFld input[type="text"],
+.wFormContainer .wForm .inputWrapper .oneField.errFld input[type="password"],
+.wFormContainer .wForm .inputWrapper .oneField.errFld textarea,
+.wFormContainer .wForm .inputWrapper .oneField.errFld select {
+  border-color: var(--pink);
+}
+
+/* Actions */
+.wFormContainer .wForm .actions .primaryAction {
+  background-color: var(--primary-mid-blue-400);
+  color: white;
+  border: 0;
+  border-radius: var(--border-radius);
+  padding: 16px;
+  line-height: 16px;
+  outline: 0;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  font-weight: 600;
+}
+
+.wFormContainer .wForm .actions .primaryAction:disabled {
+  cursor: not-allowed;
+  background-color: rgba(var(--neutral-600), 0.2);
+  color: rgba(white, 0.9);
+}
+
+.wFormContainer .wForm .actions .primaryAction:hover {
+  background-color: var(--secondary-dark-blue);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .wFormContainer .wForm .inputWrapper select[multiple] {
+    width: auto;
+    -webkit-appearance: none;
+    height: 30px;
+  }
+
+  .wFormContainer .wForm .actions .primaryAction {
+    min-width: 150px;
+    font-size: 16px;
+  }
+}
+
+/* Placeholder */
+.wFormContainer .wForm .oneField {
+  position: relative;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Input styles */
+.wFormContainer .wForm .inputWrapper textarea,
+.wFormContainer .wForm .inputWrapper input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  padding-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;  
+}
+
+/* Label styles */
+.wFormContainer .wForm .oneField:has(.inputWrapper textarea) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper input[type="text"]) .label {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  transition: font-size 0.3s, top 0.3s;
+  pointer-events: none;
+  font-size: 16px; /* Initial font size */
+  z-index: 1;
+}
+
+.wFormContainer .wForm br {
+  display: none;
+}
+
+/* Decrease label size when input is focused or has value */
+.wFormContainer .wForm .oneField:has(.inputWrapper textarea:focus) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper textarea:not(:placeholder-shown)) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper input[type="text"]:focus) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper input[type="text"]:not(:placeholder-shown)) .label{
+  font-size: 12px;
+  top: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.wFormContainer .wForm .oneField textarea::placeholder,
+.wFormContainer .wForm .oneField input[type="text"]::placeholder {
+  color: transparent;
+}
+
+.wFormContainer .wForm .oneField .label,
+.wFormContainer .wForm .reqMark:after {
+  font-size: 14px;
+  color: #23276C;
+}
+
+.wFormContainer .wForm .oneField:has(.inputWrapper textarea:focus) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper textarea:not(:placeholder-shown)) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper input[type="text"]:focus) .label,
+.wFormContainer .wForm .oneField:has(.inputWrapper input[type="text"]:not(:placeholder-shown)) .label{
+  color: #2041CA;
+}
+
+.wFormContainer .wForm .oneField .inputWrapper textarea,
+.wFormContainer .wForm .oneField .inputWrapper input[type="text"] {
+    font-size: 1rem !important;
+    line-height: 1.5em;
+    background: #ffffff;
+    color: #23276C;
+    border: 1px solid #666666;
+    border-radius: 12px;
+    padding: 25px 16px 5px 12px;
+    outline: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 56px;  
+}
+
+.wFormContainer .wForm .oneField .inputWrapper textarea {
+  height: 160px;
+}
+
+.wFormContainer .wForm .oneField .inputWrapper textarea:focus,
+.wFormContainer .wForm .oneField .inputWrapper input[type="text"]:focus {
+  border-color: #2041CA;
+  border-width: 2px;
+}
+
+.wFormContainer .wForm .oneField .inputWrapper textarea:hover,
+.wFormContainer .wForm .oneField .inputWrapper input[type="text"]:hover {
+  background: #F5F5F5
+}
