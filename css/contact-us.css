@@ -216,7 +216,7 @@ input[type=checkbox] {
   background-color: #ffffff;
 }
 
-.wFormContainer .wForm label {
+.wFormContainer .wForm .choices label {
     position: static;
     display: inline-block;
     font-size: 1rem;
@@ -225,7 +225,7 @@ input[type=checkbox] {
     padding-left: 40px;
 }
 
-.wFormContainer .wForm .oneChoice:not(:last-child) label {
+.wFormContainer .wForm .choices .oneChoice:not(:last-child) label {
     margin-bottom: 24px;
 }
 
