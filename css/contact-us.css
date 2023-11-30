@@ -216,6 +216,19 @@ input[type=checkbox] {
   background-color: #ffffff;
 }
 
+.wFormContainer .wForm label {
+    position: static;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: inherit;
+    text-decoration: inherit !important;
+    padding-left: 40px;
+}
+
+.wFormContainer .wForm .oneChoice:not(:last-child) label {
+    margin-bottom: 24px;
+}
+
 /* Placeholder and Input styles */
 .wFormContainer .wForm .oneField {
   position: relative;
