@@ -100,6 +100,122 @@
   }
 }
 
+/* Box sizing for :before and :after pseudo-elements */
+:before,
+:after,
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Default input styles */
+input {
+  /* ... Your input styles here ... */
+}
+
+/* Additional input styles */
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+/* General button, html, input, select, textarea styles */
+button, html, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* Specific button and input styles */
+button,
+input {
+  line-height: normal;
+}
+
+/* Resetting certain input properties */
+input {
+  line-height: normal;
+  border-radius: 0;
+}
+
+/* Inheriting font and line-height for form elements */
+input, button, select, textarea,
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* Resetting checkbox and radio button styles */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* Specific styles for checkbox and radio inputs */
+input[type=radio],
+input[type=checkbox] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+/* Custom styling for form radio lists */
+.wFormContainer .wForm input[type=checkbox],
+.wFormContainer .wForm input[type=radio] {
+  margin-bottom: 0.75em;
+  margin-right: 0.5em;
+  float: left;
+}
+
+/* Styling for custom radio buttons in radio lists */
+.wFormContainer .wForm input[type=radio] {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  outline: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #f5f5f5;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Styling for checked custom radio buttons in radio lists */
+.wFormContainer .wForm input[type=radio]:checked {
+  background-color: #2041ca;
+  border-color: #2041ca;
+}
+
+/* Custom radio button styles */
+.wFormContainer .wForm input[type=radio]:checked:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 /* Placeholder and Input styles */
 .wFormContainer .wForm .oneField {
   position: relative;
