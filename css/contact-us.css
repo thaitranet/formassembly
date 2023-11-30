@@ -287,5 +287,5 @@ input[type=checkbox] {
 }
 
 .wForm .inline div.oneField {
-  width: calc(50% - 6px);
+  width: calc(50% - 3px);
 }
