@@ -286,6 +286,6 @@ input[type=checkbox] {
     opacity: 1;
 }
 
-.wForm .inline div.oneField {
+.wFormContainer .wForm .inline div.oneField {
   width: calc(50% - 3px);
 }
