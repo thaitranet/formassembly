@@ -112,6 +112,7 @@
   color: var(--secondary-dark-blue);
 }
 
+.wFormContainer .wForm .oneField .inputWrapper select,
 .wFormContainer .wForm .oneField .inputWrapper textarea,
 .wFormContainer .wForm .oneField .inputWrapper input[type="text"] {
   font-size: 1rem;
@@ -131,12 +132,14 @@
   height: 160px;
 }
 
+.wFormContainer .wForm .oneField .inputWrapper select:focus,
 .wFormContainer .wForm .oneField .inputWrapper textarea:focus,
 .wFormContainer .wForm .oneField .inputWrapper input[type="text"]:focus {
   border-color: var(--primary-mid-blue-400);
   border-width: 2px;
 }
 
+.wFormContainer .wForm .oneField .inputWrapper select:hover,
 .wFormContainer .wForm .oneField .inputWrapper textarea:hover,
 .wFormContainer .wForm .oneField .inputWrapper input[type="text"]:hover {
   background: var(--neutral-100);
