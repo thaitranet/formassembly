@@ -276,4 +276,12 @@ input[type=checkbox] {
 .wFormContainer .wForm .oneField .inputWrapper textarea:hover,
 .wFormContainer .wForm .oneField .inputWrapper input[type="text"]:hover {
   background: var(--neutral-100);
+
+.wFormContainer .wForm .hintsBelow .field-hint .hint, 
+.wFormContainer .wForm .hintsBelow .field-hint-inactive .hint {
+    font-family: inherit;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 8px;
+    opacity: 1;
 }
