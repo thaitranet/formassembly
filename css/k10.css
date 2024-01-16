@@ -251,7 +251,8 @@ input[type="password"]#password:hover {
 }
 
 .wForm .wfPageNextButton,
-.wForm .wfPagePreviousButton {
+.wForm .wfPagePreviousButton,
+.wFormContainer .wForm .actions .primaryAction {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -270,7 +271,8 @@ input[type="password"]#password:hover {
     cursor: pointer;
 }
 
-.wForm .wfPageNextButton {
+.wForm .wfPageNextButton,
+.wFormContainer .wForm .actions .primaryAction {
     background-color: #2041CA;
     color: #fff;
 }
@@ -280,16 +282,13 @@ input[type="password"]#password:hover {
     color: #fff;
 }
 
-.wForm .wfPageNextButton:hover, .wForm .wfPageNextButton:focus {
+.wForm .wfPageNextButton:hover, .wForm .wfPageNextButton:focus,
+.wFormContainer .wForm .actions .primaryAction:hover, .wFormContainer .wForm .actions .primaryAction:focus {
     background-color: #000747;
     color: #fff;
 }
 
 .wForm .wfTabNav {
-    display: none;
-}
-
-.wFormContainer .wForm .actions .primaryAction {
     display: none;
 }
 
